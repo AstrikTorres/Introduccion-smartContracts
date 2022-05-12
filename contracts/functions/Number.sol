@@ -3,10 +3,11 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract Number {
-    int public number = 2;
+    int number = 2;
 
     // private: this function used only in this contract
-    function getNumber() private returns(int n) {
+    // view: this funtction only reed variables
+    function getNumber() private view returns(int n) {
         return number;
     }    
 
