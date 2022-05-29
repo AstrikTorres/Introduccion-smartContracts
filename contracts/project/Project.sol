@@ -3,6 +3,7 @@
 pragma solidity >=0.7.0 <0.9.0;
 
 contract ProjectCrowdfunding {
+    uint256 private id; 
     string private name;
     address payable private owner;
     uint256 private requiredFunds;
